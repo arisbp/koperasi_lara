@@ -1,0 +1,117 @@
+:root {
+    --dark-green: #609560;
+    --medium-green: #497449;
+    --light-green: #96a989;
+    --text-light: #ffffff;
+}
+
+.navbar {
+    background-color: var(--dark-green);
+    color: var(--text-light);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.nav-link {
+    color: var(--text-light);
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-green);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    color: var(--text-light);
+}
+
+.nav-item .active {
+    color: var(--light-green);
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: var(--medium-green);
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+:root {
+    --dark-green: #609560;
+    --medium-green: #497449;
+    --light-green: #96a989;
+    --text-light: #ffffff;
+}
+
+.navbar {
+    background-color: var(--dark-green);
+    color: var(--text-light);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.nav-link {
+    color: var(--text-light);
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-green);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    color: var(--text-light);
+}
+
+.nav-item .active {
+    color: var(--light-green);
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: var(--medium-green);
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+    

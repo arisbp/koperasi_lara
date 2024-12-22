@@ -1,0 +1,215 @@
+/* Root Variables */
+:root {
+    --primary-green: #497449; /* Hijau tua */
+    --secondary-green: #609560; /* Hijau sedang */
+    --light-green: #c6e6c3; /* Hijau muda */
+    --blue: #4299e1; /* Biru */
+    --red: #e63946; /* Merah */
+    --yellow: #ffc107; /* Kuning */
+    --gray-light: #f7f7f7; /* Abu-abu terang */
+    --gray-dark: #2d3748; /* Abu-abu gelap */
+    --white: #ffffff; /* Putih */
+    --font-family: 'Open Sans', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-green);
+    color: var(--gray-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--secondary-green);
+    color: var(--white);
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid var(--gray-light);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--gray-light);
+}
+
+tbody tr:hover {
+    background-color: var(--light-green);
+    transition: background-color 0.3s ease;
+}
+
+/* Status Colors */
+.text-green-600 {
+    color: var(--secondary-green);
+    font-weight: bold;
+}
+
+.text-blue-600 {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+
+.text-red-600 {
+    color: var(--red);
+    font-weight: bold;
+}
+
+/* Button Styling */
+a {
+    text-decoration: none;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #3182ce; /* Biru lebih gelap */
+}
+
+.btn-green {
+    background-color: var(--secondary-green);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+    background-color: #2f855a; /* Hijau lebih gelap */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Table Large Styling */
+.table-large {
+    font-size: 1.1rem; /* Ukuran font lebih besar */
+    padding: 10px 15px; /* Padding dalam tabel */
+    margin: 20px 0; /* Jarak antara tabel dengan elemen lain */
+}
+
+.table-large th,
+.table-large td {
+    padding: 12px 15px; /* Padding per sel */
+    text-align: left; /* Penyesuaian teks */
+}
+
+.table-large th {
+    font-size: 1.2rem; /* Ukuran font header tabel */
+    background-color: var(--secondary-green); /* Warna hijau sedang */
+    color: var(--white); /* Teks putih */
+}
+
+.table-large tbody td {
+    font-size: 1.1rem; /* Ukuran font isi tabel */
+    border: 1px solid var(--gray-light); /* Warna border */
+}
+
+.table-large tbody tr:hover {
+    background-color: var(--light-green); /* Warna hover */
+    transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3182ce; /* Biru lebih gelap */
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: var(--red);
+}
+
+.btn-delete:hover {
+    background-color: #c53030; /* Merah lebih gelap */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

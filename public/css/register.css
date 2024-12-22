@@ -1,0 +1,97 @@
+/* Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #497449; /* Latar belakang hijau */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card Container */
+.card {
+    background-color: #f1f8f5; /* Hijau muda */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Title Styling */
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Input */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #609560;
+    box-shadow: 0 0 5px rgba(96, 149, 96, 0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    background-color: #609560;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e8b4e;
+}
+
+/* Links */
+.card a {
+    color: #609560;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links */
+.footer-text {
+    font-size: 0.9rem;
+    color: #7a7a7a;
+}

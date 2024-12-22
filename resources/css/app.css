@@ -1,0 +1,56 @@
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    @apply bg-gray-200 text-gray-800 font-sans antialiased;
+}
+
+/* Navigation Bar */
+nav {
+    @apply bg-gray-800 text-white shadow-lg;
+}
+nav a {
+    @apply text-white hover:text-gray-300 px-4 py-2 inline-block;
+}
+
+/* Header Section */
+header {
+    @apply bg-blue-500 text-white shadow-md;
+}
+header h1 {
+    @apply text-2xl font-bold tracking-wide;
+}
+
+/* Main Content */
+main {
+    @apply bg-blue-600 rounded-md p-6 max-w-7xl mx-auto;
+}
+
+/* Buttons */
+.btn {
+    @apply bg-blue-500 text-black font-bold py-2 px-4 rounded;
+}
+.btn:hover {
+    @apply bg-blue-600;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+.margin-auto {
+    margin: auto;
+}
+
+/* Custom Breakpoints */
+@media (min-width: 768px) {
+    header {
+        @apply py-8;
+    }
+    main {
+        @apply p-8;
+    }
+}

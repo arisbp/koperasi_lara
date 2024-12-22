@@ -1,0 +1,117 @@
+/* Root Variables */
+:root {
+    --primary-green: #497449; /* Hijau tua */
+    --secondary-green: #609560; /* Hijau sedang */
+    --light-gray: #f7f7f7; /* Abu-abu terang */
+    --white: #ffffff; /* Putih */
+    --text-dark: #1f2937; /* Abu-abu gelap */
+    --text-light: #6b7280; /* Abu-abu sedang */
+    --blue: #4299e1; /* Biru */
+    --red: #e63946; /* Merah */
+    --font-family: 'Open Sans', sans-serif;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-green);
+    color: var(--text-dark);
+}
+
+/* Header */
+header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: var(--secondary-green);
+    box-shadow: 0 0 5px rgba(96, 149, 96, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3182ce; /* Biru lebih gelap */
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: var(--red);
+}
+
+.btn-delete:hover {
+    background-color: #c53030; /* Merah lebih gelap */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

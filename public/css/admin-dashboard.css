@@ -1,0 +1,159 @@
+/* Root Variables */
+:root {
+    --primary-blue: #4299e1; /* Biru terang */
+    --primary-green: #34d399; /* Hijau terang */
+    --primary-yellow: #facc15; /* Kuning */
+    --bg-light: #f9fafb; /* Latar belakang terang */
+    --text-dark: #1f2937; /* Abu-abu gelap */
+    --text-light: #6b7280; /* Abu-abu terang */
+    --white: #ffffff; /* Putih */
+    --font-family: 'Open Sans', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: var(--text-light);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Jarak antar card */
+}
+
+/* Card */
+.card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+}
+
+.bg-yellow {
+    background-color: var(--primary-yellow);
+}
+
+.bg-green {
+    background-color: var(--primary-green);
+}
+
+/* Card Content */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: var(--white);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: #3182ce;
+}
+
+.btn-warning {
+    background-color: var(--primary-yellow);
+}
+
+.btn-warning:hover {
+    background-color: #eab308;
+}
+
+.btn-success {
+    background-color: var(--primary-green);
+}
+
+.btn-success:hover {
+    background-color: #2f855a;
+}
