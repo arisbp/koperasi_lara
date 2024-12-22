@@ -10,5 +10,5 @@
 ## Link manual book dan USE CASE
 
 Manual Book : [Lihat Dokumen](https://drive.google.com/file/d/1vSxPVYaWi1sfSsRiVkCrgVrxgQEAlubl/view?usp=drive_link)
-USE CASE : [LIHAT DOKUMEN]
+USE CASE : [Lihat Dokumen]
 (https://drive.google.com/file/d/1fTTyzMM0mFpIFK3mS_tqscRKCjKQk59v/view?usp=sharing)
