@@ -7,6 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Link manual book
 
 Manual Book : [Lihat Dokumen](https://drive.google.com/file/d/1vSxPVYaWi1sfSsRiVkCrgVrxgQEAlubl/view?usp=drive_link)
